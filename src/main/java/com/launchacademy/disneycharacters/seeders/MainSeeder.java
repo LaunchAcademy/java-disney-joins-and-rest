@@ -12,6 +12,6 @@ public class MainSeeder implements CommandLineRunner {
   @Override
   public void run(String... args) throws Exception {
     filmsSeeder.seed();
-//    charactersSeeder.seed();
+    charactersSeeder.seed();
   }
 }

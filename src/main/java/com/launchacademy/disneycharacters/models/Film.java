@@ -34,4 +34,8 @@ public class Film {
 
   @Column(name="type")
   private String type;
+
+  @OneToMany(mappedBy="film")
+  @JsonIgnoreProperties("film")
+  private List<Character> characters;
 }

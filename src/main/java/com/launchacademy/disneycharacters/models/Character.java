@@ -37,4 +37,9 @@ public class Character {
   @NotNull
   @Column
   private boolean princess;
+
+  @ManyToOne
+  @JoinColumn(name="film_id", nullable=false)
+  @JsonIgnoreProperties("characters")
+  private Film film;
 }
