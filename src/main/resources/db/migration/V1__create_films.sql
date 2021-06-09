@@ -1,0 +1,5 @@
+CREATE TABLE films(
+  id SERIAL PRIMARY KEY,
+  title VARCHAR(255) NOT NULL,
+  type VARCHAR(255)
+);

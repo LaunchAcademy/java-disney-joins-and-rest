@@ -1,0 +1,6 @@
+CREATE TABLE characters(
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(20) NOT NULL,
+  princess BOOLEAN NOT NULL DEFAULT false,
+  film_id INTEGER NOT NULL REFERENCES films(id)
+);
